@@ -1,0 +1,1 @@
+1. [工厂模式](https://blog.csdn.net/qq_41929184/article/details/117955365)
