@@ -11,7 +11,7 @@ import com.lomtom.demo_0_3.service.impl.CashAwardService;
 public class CashAwardFactory implements AwardFactory {
 
     @Override
-    public AwardService getAward(Integer awardNumber) {
+    public AwardService getAwardService(Integer awardNumber) {
         return new CashAwardService();
     }
 }

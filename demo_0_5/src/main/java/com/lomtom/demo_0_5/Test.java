@@ -25,7 +25,7 @@ public class Test {
             System.out.print(employee + "抽奖兑换------    ");
 
             AwardFactory factory = FactoryFactory.createAwardFactory(factoryNumber);
-            AwardService service = factory.getAward(awardNumber);
+            AwardService service = factory.getAwardService(awardNumber);
             service.getAward(employee);
 
         }

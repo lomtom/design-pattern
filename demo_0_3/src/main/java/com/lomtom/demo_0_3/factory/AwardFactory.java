@@ -8,6 +8,6 @@ import com.lomtom.demo_0_3.service.AwardService;
  * @date 2021/6/24 17:59
  **/
 public interface AwardFactory {
-    AwardService getAward(Integer awardNumber);
+    AwardService getAwardService(Integer awardNumber);
 }
 

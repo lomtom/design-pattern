@@ -10,7 +10,7 @@ import com.lomtom.demo_0_2.service.impl.MallCardAwardService;
  * @date 2021/6/24 17:59
  **/
 public class AwardFactory {
-    public AwardService getAward(Integer awardNumber) {
+    public AwardService getAwardService(Integer awardNumber) {
         if (awardNumber == 1){
            return new MallCardAwardService();
         }else if (awardNumber == 2){

@@ -13,7 +13,7 @@ import com.lomtom.demo_0_5.service.impl.taobao.MallCardAwardService;
 public class TaobaoAwardFactory implements com.lomtom.demo_0_5.factory.AwardFactory {
 
     @Override
-    public AwardService getAward(Integer awardNumber) {
+    public AwardService getAwardService(Integer awardNumber) {
         if (awardNumber == 1){
             return new MallCardAwardService();
         }else if (awardNumber == 2){

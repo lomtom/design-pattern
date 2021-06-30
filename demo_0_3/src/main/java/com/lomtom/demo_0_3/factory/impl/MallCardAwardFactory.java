@@ -10,7 +10,7 @@ import com.lomtom.demo_0_3.service.impl.MallCardAwardService;
  **/
 public class MallCardAwardFactory implements AwardFactory {
     @Override
-    public AwardService getAward(Integer awardNumber) {
+    public AwardService getAwardService(Integer awardNumber) {
         return new MallCardAwardService();
     }
 }

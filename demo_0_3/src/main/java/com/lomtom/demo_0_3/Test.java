@@ -22,7 +22,7 @@ public class Test {
             Integer awardNumber = random.nextInt(3);
             System.out.print(employee + "抽奖兑换------    ");
             AwardFactory factory = FactoryFactory.createFactory(awardNumber);
-            AwardService service = factory.getAward(awardNumber);
+            AwardService service = factory.getAwardService(awardNumber);
             service.getAward(employee);
         }
     }
