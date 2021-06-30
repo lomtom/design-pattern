@@ -34,16 +34,6 @@ public class Phone implements Cloneable{
         this.label = label;
     }
 
-    public Phone(Phone phone) {
-        if (phone!=null){
-            this.battery = phone.getBattery();
-            this.cpu = phone.getCpu();
-            this.screen = phone.getScreen();
-            this.energyConsumption = phone.getEnergyConsumption();
-            this.label = phone.getLabel();
-        }
-    }
-
     public void print() {
         System.out.println(
                 "电池信息：" + battery +
@@ -56,8 +46,14 @@ public class Phone implements Cloneable{
 
 
     @Override
-    public Phone clone(){
-        return new Phone(this);
+    public Phone clone() {
+        Object clone = null;
+        try {
+            clone = super.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        return (Phone) clone;
     }
 
     @Override
@@ -77,23 +73,7 @@ public class Phone implements Cloneable{
         return Objects.hash(battery, cpu, screen, energyConsumption, label);
     }
 
-    public Battery getBattery() {
-        return battery;
-    }
-
-    public Cpu getCpu() {
-        return cpu;
-    }
-
-    public Screen getScreen() {
-        return screen;
-    }
-
-    public Integer getEnergyConsumption() {
-        return energyConsumption;
-    }
-
-    public String getLabel() {
-        return label;
+    public void setScreen(Screen screen) {
+        this.screen = screen;
     }
 }

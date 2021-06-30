@@ -3,6 +3,7 @@ package com.lomtom.model_2_0;
 import com.lomtom.model_2_0.builders.impl.PhoneBuilder;
 import com.lomtom.model_2_0.director.Director;
 import com.lomtom.model_2_0.goods.Phone;
+import com.lomtom.model_2_0.material.Screen;
 
 /**
  * @author lomtom
@@ -27,6 +28,8 @@ public class Test {
 
         phone.print();
         phone1.print();
+        phone2.print();
+        phone3.print();
     }
 
     public static void isSame(Phone p1,Phone p2){

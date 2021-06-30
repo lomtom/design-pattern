@@ -14,7 +14,6 @@ public class Director {
         builder.setBattery(5000);
     }
 
-
     public void constructApply(Builder builder){
         builder.setCpu("apply","A14");
         builder.setScreen("三星","AMOLED");
