@@ -20,7 +20,7 @@ public class Test {
 
         PhoneBuilder builder1 = new PhoneBuilder();
         director.constructApply(builder1);
-        Phone phone1 = builder1.ConstructPhone(800,"我苹果无所畏惧！！！");
+        Phone phone1 = builder1.ConstructPhone(600,"我苹果无所畏惧！！！");
         phone1.print();
     }
 }
