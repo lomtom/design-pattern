@@ -1,6 +1,7 @@
-package com.lomtom.demo_1_0.director;
+package com.lomtom.demo_2_1.director;
 
-import com.lomtom.demo_1_0.builders.Builder;
+
+import com.lomtom.demo_2_1.builders.Builder;
 
 /**
  * @author lomtom
@@ -13,6 +14,7 @@ public class Director {
         builder.setScreen("京东方","LCD");
         builder.setBattery(5000);
     }
+
 
     public void constructApple(Builder builder){
         builder.setCpu("apple","A14");

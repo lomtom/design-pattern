@@ -1,8 +1,8 @@
-package com.lomtom.model_2_0.goods;
+package com.lomtom.demo_2_0.goods;
 
-import com.lomtom.model_2_0.material.Battery;
-import com.lomtom.model_2_0.material.Cpu;
-import com.lomtom.model_2_0.material.Screen;
+import com.lomtom.demo_2_0.material.Battery;
+import com.lomtom.demo_2_0.material.Cpu;
+import com.lomtom.demo_2_0.material.Screen;
 
 import java.util.Objects;
 
@@ -26,6 +26,9 @@ public class Phone implements Cloneable{
 
     private String label;
 
+    public Phone() {
+    }
+
     public Phone(Battery battery, Cpu cpu, Screen screen, Integer energyConsumption, String label) {
         this.battery = battery;
         this.cpu = cpu;
@@ -36,7 +39,8 @@ public class Phone implements Cloneable{
 
     public void print() {
         System.out.println(
-                "电池信息：" + battery +
+                this +
+                ", 电池信息：" + battery +
                 ", 处理器：" + cpu +
                 ", 屏幕：" + screen +
                 ", 能耗：" + energyConsumption + "mA/小时" +
@@ -56,6 +60,7 @@ public class Phone implements Cloneable{
         return (Phone) clone;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -73,7 +78,12 @@ public class Phone implements Cloneable{
         return Objects.hash(battery, cpu, screen, energyConsumption, label);
     }
 
+
     public void setScreen(Screen screen) {
         this.screen = screen;
+    }
+
+    public Screen getScreen() {
+        return screen;
     }
 }

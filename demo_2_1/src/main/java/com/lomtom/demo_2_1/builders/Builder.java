@@ -1,4 +1,4 @@
-package com.lomtom.model_2_0.builders;
+package com.lomtom.demo_2_1.builders;
 
 /**
  * @author lomtom
