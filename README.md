@@ -3,9 +3,9 @@
 持续更新中！！！👍👍👍
 
 
-![img.png](https://img-blog.csdnimg.cn/20210630184331365.png)
-
-
+<div align="center">
+<img src="https://img-blog.csdnimg.cn/20210630184331365.png"/>
+</div>
 设计模式源码以及代码展示：👉 [github](https://github.com/zero028/design-pattern)
 
 
