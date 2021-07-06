@@ -6,6 +6,8 @@ import com.lomtom.demo_2_1.director.Director;
 import com.lomtom.demo_2_1.goods.Phone;
 import com.lomtom.demo_2_1.material.Screen;
 
+import java.util.Arrays;
+
 /**
  * @author lomtom
  * @date 2021/6/30 16:33
@@ -29,6 +31,8 @@ public class Test {
         screen.setBrand("三星");
         phone.setScreen(screen);
 
+
+        System.out.println("修改之后");
         phone.print();
         phone1.print();
     }

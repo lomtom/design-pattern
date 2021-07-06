@@ -28,6 +28,7 @@ public class Test {
         screen.setBrand("三星");
         phone.setScreen(screen);
 
+        System.out.println("修改之后");
         phone.print();
         phone1.print();
     }
