@@ -34,7 +34,8 @@ public class Phone {
 
     public void print() {
         System.out.println(
-                "电池信息：" + battery +
+                this +
+                ", 电池信息：" + battery +
                 ", 处理器：" + cpu +
                 ", 屏幕：" + screen +
                 ", 能耗：" + energyConsumption + "mA/小时" +

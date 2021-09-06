@@ -48,8 +48,6 @@ public class PhoneBuilder implements Builder {
         if (this.cache != null){
             return this.cache.clone();
         }
-        this.energyConsumption = energyConsumption;
-        this.lable = label;
         Phone phone =new Phone(battery, cpu, screen, energyConsumption, label);
         this.cache = phone;
         return phone;
